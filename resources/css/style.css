@@ -61,12 +61,22 @@ html {
   justify-content: center;
   background-color: firebrick;
 }
-#product-banner ul li {
+#product-banner nav ul li {
   display: inline-block;
   padding: .75rem .3rem;
   font-family: Roboto, sans-serif;
 }
-#product-banner ul li a {
+#product-banner nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+#product-banner h3 {
+  padding: .75rem .3rem;
+  visibility: hidden;
+  position: absolute;
+  left: 46%;
+}
+#product-banner h3 a {
   color: white;
   text-decoration: none;
 }
@@ -80,6 +90,9 @@ html {
   width: 100%;
 }
 #product-gallery .text-banner {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
   border: 4px solid black;
   width: 30%;
   min-width: 15rem;
@@ -95,6 +108,7 @@ html {
   color: white;
   text-align: center;
   padding: .5rem;
+  width: 100%;
 }
 
 /*COMPANY-INFO*/
@@ -107,12 +121,11 @@ html {
 }
 #company-info .text-banner {
   width: 35%;
-
 }
 #company-info .text-banner h5 {
   background-color: black;
   color: white;
-  padding: .5rem 0 .5rem 2rem;
+  padding: 1rem 0 1rem 2rem;
 }
 
 /*FOOTER*/
@@ -126,4 +139,82 @@ html {
 #footer h3 {
   color: white;
   padding: 2rem;
+}
+
+/*MEDIA QUERIES*/
+  /*SMALL SIZE*/
+@media only screen and (max-width: 470px) {
+  #cover {
+    height: 15rem;
+  }
+  #cover .text-banner {
+    width: 100%;
+    left: 0;
+    top: 10rem;
+  }
+  #cover .text-banner h2 {
+    font-size: .77rem;
+    padding: 1rem 0 .25rem 2rem;
+  }
+  #cover .text-banner h3 {
+    font-size: 1rem;
+    padding: .25rem 0 1rem 2rem;
+  }
+  #product-banner {
+    height: 3rem;
+  }
+  #product-gallery {
+    width: 100%;
+  }
+  #product-gallery .text-banner:nth-child(2) {
+    display: none;
+  }
+  #product-gallery .text-banner {
+    width: 100%;
+    margin: 0 auto;
+  }
+  #company-info .text-banner {
+    width: 90%;
+    margin: 0 5% .5rem 5%;
+  }
+  #footer h3 {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+  /*MEDIUM SIZE*/
+@media only screen and (max-width: 1024px) {
+  #product-banner ul {
+    visibility: hidden;
+  }
+  #product-banner h3 {
+    visibility: visible;
+  }
+  #product-gallery {
+    justify-content: space-between;
+  }
+  #product-gallery .text-banner {
+    width: 47%;
+  }
+  #product-gallery .text-banner img {
+    width: 9rem;
+    height: 9rem;
+    padding: 2rem;
+  }
+  #product-gallery .text-banner:last-child {
+    display: none;
+  }
+  #company-info {
+    justify-content: space-between;
+  }
+}
+
+  /*LARGE SIZE*/
+@media only screen and (min-width: 1024px) {
+  #product-gallery .text-banner img {
+    width: 9rem;
+    height: 9rem;
+    padding: 2rem;
+  }
 }
