@@ -38,6 +38,7 @@ html {
   top: 9rem;
   left: 5rem;
   color: white;
+  text-transform: uppercase;
 }
 #cover .text-banner h2 {
   font-size: 1rem;
@@ -50,4 +51,79 @@ html {
   font-family: Roboto, sans-serif;
   font-weight: bold;
   padding: 0 0 2rem 3rem;
+}
+
+/*PRODUCT-BANNER*/
+#product-banner {
+  display: inline-flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  background-color: firebrick;
+}
+#product-banner ul li {
+  display: inline-block;
+  padding: .75rem .3rem;
+  font-family: Roboto, sans-serif;
+}
+#product-banner ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+/*PRODUCT-GALLERY*/
+#product-gallery {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 3rem 0;
+  width: 100%;
+}
+#product-gallery .text-banner {
+  border: 4px solid black;
+  width: 30%;
+  min-width: 15rem;
+  flex-grow: 0;
+}
+#product-gallery .text-banner img {
+  width: 9rem;
+  height: 9rem;
+  padding: 2rem;
+}
+#product-gallery .text-banner h4 {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: .5rem;
+}
+
+/*COMPANY-INFO*/
+#company-info {
+  display: inline-flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-around;
+  margin: 0 0 4rem 0;
+}
+#company-info .text-banner {
+  width: 35%;
+
+}
+#company-info .text-banner h5 {
+  background-color: black;
+  color: white;
+  padding: .5rem 0 .5rem 2rem;
+}
+
+/*FOOTER*/
+#footer {
+  display: inline-flex;
+  align-items: center;
+  height: 5rem;
+  background-color: black;
+  width: 100%;
+}
+#footer h3 {
+  color: white;
+  padding: 2rem;
 }
